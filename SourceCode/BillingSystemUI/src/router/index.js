@@ -83,6 +83,25 @@ export const constantRoutes = [
       }
     ]
   },
+  // Custom Routes Start
+
+  // MASTER DATA START
+  {
+    path: '/Master-Data',
+    component: Layout,
+    redirect: '/Master-Data',
+    children: [
+      {
+        path: '/Index',
+        component: () => import('@/views/MasterData'),
+        name: 'MasterData',
+        meta: { title: 'Master Data', icon: 'tree', affix: true }
+      }
+    ]
+  },
+  // MASTER DATA END
+
+  // Custom Routes End
   {
     path: '/documentation',
     component: Layout,

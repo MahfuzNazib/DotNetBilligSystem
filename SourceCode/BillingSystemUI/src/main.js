@@ -1,4 +1,8 @@
 import Vue from 'vue'
+import BootstrapVue from 'bootstrap-vue'
+
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import Cookies from 'js-cookie'
 
@@ -32,6 +36,8 @@ if (process.env.NODE_ENV === 'production') {
   const { mockXHR } = require('../mock')
   mockXHR()
 }
+
+Vue.use(BootstrapVue)
 
 Vue.use(Element, {
   size: Cookies.get('size') || 'medium', // set element-ui default size

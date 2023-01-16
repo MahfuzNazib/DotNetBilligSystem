@@ -1,16 +1,36 @@
 <template>
   <div class="app-container">
     <aside>
-      Master Data List
+      MASTER DATA LIST
     </aside>
 
-    <ul>
-      <li>Shop Type</li>
-      <li>Shops</li>
-      <HorizontalCard buttonText="Test Button" buttonURL="https://eslint.vuejs.org/user-guide/"/>
+    <div>
+      <div class="row">
+        <div class="col-md-2">
+          <HorizontalCard buttonText="Shop Category" @click="$router.push('/dashboard')"/>
+        </div>
 
+        <div class="col-md-2">
+          <HorizontalCard buttonText="Shop List" />
+        </div>
 
-    </ul>
+        <div class="col-md-2">
+          <HorizontalCard buttonText="Test Button" />
+        </div>
+
+        <div class="col-md-2">
+          <HorizontalCard buttonText="Test Button" />
+        </div>
+
+        <div class="col-md-2">
+          <HorizontalCard buttonText="Test Button" />
+        </div>
+
+        <div class="col-md-2">
+          <HorizontalCard buttonText="Test Button" />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
